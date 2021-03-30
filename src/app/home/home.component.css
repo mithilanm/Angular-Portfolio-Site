@@ -1,0 +1,103 @@
+.greeting-container {
+  text-align: center;
+}
+
+.greeting {
+  color: white;
+  font-size: 6.5vw;
+  display: inline-block;
+  position: relative;
+}
+
+.greeting-container img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.btn-group,
+.btn-group-vertical {
+  margin-top: 50px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.center {
+  display: block;
+  text-align: -webkit-center;
+}
+
+.buffer .btn {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.btn-danger.outline {
+  color: red;
+  border: 2px solid red;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.btn-danger:hover {
+  background: red;
+  color: black;
+}
+
+.btn-info.outline {
+  color: #4dc3ff;
+  border: 2px solid #4dc3ff;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.btn-info:hover {
+  background: #4dc3ff;
+  color: black;
+}
+
+.btn-warning.outline {
+  color: #00a2ff;
+  border: 2px solid #00a2ff;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.btn-warning:hover {
+  background: #00a2ff;
+  color: black;
+}
+
+.btn-success.outline {
+  color: #d6d6d6;
+  border: 2px solid #d6d6d6;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.btn-success.outline:hover {
+  background: #d6d6d6;
+  color: black;
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+@media (max-width: 768px) {
+  .btn-responsive {
+    padding: 2px 4px;
+    font-size: 80%;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .btn-responsive {
+    padding: 4px 9px;
+    font-size: 90%;
+    line-height: 1.2;
+  }
+}
