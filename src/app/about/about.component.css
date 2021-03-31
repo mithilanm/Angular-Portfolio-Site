@@ -1,3 +1,22 @@
-* {
+.container,
+.row-tech {
   color: white;
+}
+.row h1 {
+  font-size: 100px;
+}
+
+.row i {
+  font-size: calc(50px + 0.5vw);
+}
+
+.container h2 {
+  margin-bottom: 20px;
+}
+.col-sm i {
+  margin-top: 100px;
+}
+
+.row p {
+  margin-top: 5%;
 }
