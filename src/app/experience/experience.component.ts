@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { Title } from "@angular/platform-browser";
 
+
 @Component({
     selector: 'app-experience',
     templateUrl: './experience.component.html',
@@ -9,5 +10,6 @@ import { Title } from "@angular/platform-browser";
 export class Experience{
     constructor(private titleService: Title){
         this.titleService.setTitle("Experience");
+
     }
 }

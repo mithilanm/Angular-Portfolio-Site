@@ -38,3 +38,16 @@ img {
   background: red;
   color: black;
 }
+
+video {
+  max-width: 100%;
+}
+
+.card-body {
+  color: black;
+}
+
+.card {
+  display: inline-block;
+  margin-right: 50px;
+}
