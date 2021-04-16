@@ -1,4 +1,7 @@
-# ResumeWebsite
+# Portfolio Site (Angular)
+
+This repo houses the files for a portfolio site made using Angular that can be found on: (https://mithilanm.com). On this site you can learn more about my professional experience and a little bit about who I am. 
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
 
