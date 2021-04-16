@@ -10,6 +10,5 @@ import { Title } from "@angular/platform-browser";
 export class Experience{
     constructor(private titleService: Title){
         this.titleService.setTitle("Experience");
-
     }
 }
