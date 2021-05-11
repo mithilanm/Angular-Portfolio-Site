@@ -2,18 +2,20 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
 @import "../node_modules/font-awesome/css/font-awesome.css";
 @import "../node_modules/devicon/devicon.css";
-html {
+body {
   height: 100vh;
   margin: auto 0;
-  background: rgb(0, 0, 0);
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 34, 68, 1) 52%,
-    rgba(0, 0, 0, 1) 100%
-  );
-}
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-body {
-  background-color: transparent;
+  color: white;
 }

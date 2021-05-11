@@ -11,4 +11,9 @@ export class Experience{
     constructor(private titleService: Title){
         this.titleService.setTitle("Experience");
     }
+    show: string = '';
+
+    readMore(name: string){
+        this.show = name;
+    }
 }
