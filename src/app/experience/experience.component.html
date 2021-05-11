@@ -95,7 +95,71 @@
 </div>
 <div class="container" id="projects">
     <h1>Projects</h1>
-        <div class="project-video">
+        <div class="text-center">
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/FirstTo20Thumb.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">First to 20 Game</h5>
+                    <p class="card-text">Used Arduino to implement the classic First 
+                        to 20 game where user can play against the computer
+                    </p>
+                    <a (click)="readMore('first')" class="btn btn-primary outline">Read More</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/FishFeederThumb.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Automated Fish Feeder</h5>
+                    <p class="card-text">Used Arduino to implement a
+                    fish feeding device where user
+                    can select number of fish from
+                    a range</p>
+                    <a (click)="readMore('fish')" class="btn btn-primary outline">Read More</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Obstacle.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Obstacle Avoiding Robot</h5>
+                    <p class="card-text">Built a RC car that used
+                    Arduino to avoid obstacles
+                    in its view as it drove
+                    around</p>
+                    <a (click)="readMore('obstacle')" class="btn btn-primary outline">Read More</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Livestreaming.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Live Streaming Robot</h5>
+                    <p class="card-text">Used Raspberry Pi to live stream visuals and 
+                        allow Xbox controller to control movement 
+                    </p>
+                    <a (click)="readMore('live')" class="btn btn-primary outline">Read More</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Budget.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Budget Calculator App</h5>
+                    <p class="card-text">Used the Angular Framework to allow users to 
+                        keep track of expenses and income 
+                    </p>
+                    <a (click)="readMore('budget')" class="btn btn-primary outline">Read More</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/Todo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Todo App</h5>
+                    <p class="card-text">Used the Angular Framework and allows users
+                        to add, update, delete and filter tasks
+                    </p>
+                    <a (click)="readMore('todo')" class="btn btn-primary outline">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-video" *ngIf="show== 'first'">
             <video class="d-block w-100" autoplay loop controls [muted]="'muted'">
                 <source src="../assets/Arduino First to 20 Game.mp4" type="video/mp4"/>
             </video>
@@ -104,10 +168,21 @@
                 <p>This application uses the Arduino board to play the classic first to
                     20 game. Here's how the game works. You as the user will compete
                     with the computer to reach the number 20 first by only adding either
-                    1 or 2 to the score every turn. The first to 20 wins the game.</p>
+                    1 or 2 to the score every turn. The first to 20 wins the game.
+                </p>
+                Technology:
+                <ul>
+                    <li>C</li>
+                    <li>Arduino</li>
+                    <li>Hardware:
+                        <ul>
+                            <li>LCD</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="project-video">
+        <div class="project-video" *ngIf="show== 'fish'">
             <video class="d-block w-100" autoplay loop controls [muted]="'muted'">
                 <source src="../assets/Automated Fish Feeder.mp4" type="video/mp4"/>
             </video>
@@ -117,20 +192,115 @@
                     feed the fish in the tank according to user selection of the number
                     of fish (options range from 1 to 5). The fish feeder takes advantage
                     of an auger-style design in order to bring control to how much fish
-                    food is dispensed into the tank.</p>
+                    food is dispensed into the tank.
+                </p>
+                Technology:
+                <ul>
+                    <li>C</li>
+                    <li>Arduino</li>
+                    <li>Hardware:
+                        <ul>
+                            <li>LCD</li>
+                            <li>360 Degree Continuous Rotation Servo</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="project-video">
-            <img class="d-block w-100" src="../assets/0.jpg" alt="" />
+        <div class="project-video" *ngIf="show=='obstacle'">
+            <img class="d-block w-100" src="../assets/Obstacle.jpg" alt="" />
             <div class="caption d-md-block">
                 <h5>Obstacle Avoiding Robot</h5>
-                <p>This is a obstacle avoiding robot I built over the summer that is
+                <p>This is a obstacle avoiding robot I built that is
                     able to move around in an environment by itself. Initially the robot
                     had a fixed ultrasonic sensor orientation (front) but I placed the
                     ultrasonic sensor above a servo motor to introduce two new
                     orientations for the sensor to view and make a more appropriate
-                    decision.</p>
+                    decision.
+                </p>
+                Technology:
+                <ul>
+                    <li>C</li>
+                    <li>Arduino</li>
+                    <li>Hardware:
+                        <ul>
+                            <li>HC-SR04 Ultrasonic Sensor</li>
+                            <li>SG90 Micro 9g Servo</li>
+                            <li>L293D Motor Drive Shield</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div> 
+        <div class="project-video" *ngIf="show=='live'">
+            <img class="d-block w-100" src="../assets/Livestreaming.jpg" alt="" />
+            <div class="caption d-md-block">
+                <h5>Live Streaming Robot</h5>
+                <p>This was the next iteration of the obstacle avoiding robot which
+                    used cameras and a Raspberry Pi. An Xbox controller would allow
+                    control of the robot's movement, including the horizontal tilt
+                    of the camera view as it would move the servo the camera is 
+                    placed on. The visuals would be streamed to a local site
+                    using WebRTC and Apache. 
+                </p>
+                Technology:
+                <ul>
+                    <li>Python</li>
+                    <li>Raspberry Pi</li>
+                    <li>HTML, CSS, Javascript</li>
+                    <li>Apache</li>
+                    <li>WebRTC</li>
+                    <li>Hardware: 
+                        <ul>
+                            <li>Raspberry Pi Camera Module</li>
+                            <li>SG90 Micro 9g Servo</li>
+                            <li>L298n Dual H-Bridge DC Stepper Motor Controller</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="project-video" *ngIf="show== 'budget'">
+            <video class="d-block w-100" autoplay loop controls [muted]="'muted'">
+                <source src="../assets/Budget.mp4" type="video/mp4" />
+            </video>
+            <div class="caption d-md-block">
+                <h5>Budget Calculator App</h5>
+                <p>This is a simple budget calculator that will allow users to
+                    add income and expenses, calculating the total and displaying 
+                    entries. There is also an option to update and delete entries.
+                </p>
+                Technology:
+                <ul>
+                    <li>Angular</li>
+                    <li>HTML, CSS, Typescript</li>
+                    <li>Github</li>
+                    <li>Visual Studio Code</li>
+                </ul>
+            </div>
+        </div>
+        <div class="project-video" *ngIf="show== 'todo'">
+            <video class="d-block w-100" autoplay loop controls [muted]="'muted'">
+                <source src="../assets/Todo.mp4" type="video/mp4" />
+            </video>
+            <div class="caption d-md-block">
+                <h5>Todo App</h5>
+                <p>This is a simple todo app that allows users to enter tasks todo which 
+                    would then be displayed. They can check off completed tasks as well 
+                    as update and delete any entered tasks. In addition, they can filter
+                    through the tasks in terms of all, completed or pending tasks, making
+                    it an easier experience to find the tasks they are looking for. As a bonus
+                    there is also a dark mode and light mode option to give users an even
+                    better UI experience.  
+                </p>
+                Technology:
+                <ul>
+                    <li>Angular</li>
+                    <li>HTML, CSS, Typescript</li>
+                    <li>Github</li>
+                    <li>Visual Studio Code</li>
+                </ul>
+            </div>
+        </div>
 </div> 
 
