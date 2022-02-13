@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: mithilanm.com
+Token: 491b4a40fde1bda7978fe5f4a8abecc497995d21ed70ceb673de99d01dc6d038
